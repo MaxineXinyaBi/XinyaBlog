@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Random Shit on O&#39;Riley42!</title>
+    <link>http://localhost:1313/tags/random-shit/</link>
+    <description>Recent content in Random Shit on O&#39;Riley42!</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 08 Jul 2025 19:13:27 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/random-shit/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello, World!</title>
+      <link>http://localhost:1313/posts/helloworld/</link>
+      <pubDate>Tue, 08 Jul 2025 19:13:27 +0200</pubDate>
+      <guid>http://localhost:1313/posts/helloworld/</guid>
+      <description>&lt;p&gt;这是我的第一篇博文！ 开心开心！&lt;/p&gt;&#xA;&lt;p&gt;作为一个生活在后博客时代的我，并没有写博客的习惯，之前只知道新浪博客，wordpress, 这是我第一次动手搭建自己的博客！&lt;/p&gt;&#xA;&lt;p&gt;emmm为什么没有选动态博客，那就是因为我太懒了，维护好麻烦，上个学期学了部署github pages, 又发现了Hugo上面有许多漂亮模板，暑假又闲着没事，说干就干！&lt;/p&gt;&#xA;&lt;p&gt;还没想好要po什么，可能是我的日常记录？可能是我的学习笔记？可能是我的找工记录？不知道，我的博客就跟我的人生一样混乱&amp;hellip;..&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

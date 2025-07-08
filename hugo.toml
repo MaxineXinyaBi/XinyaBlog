@@ -1,0 +1,14 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = "O'Riley42!"
+theme = 'hugo-book'
+
+[params]
+BookTheme = 'light'
+
+[outputs]
+home = ["HTML", "RSS"]
+page = ["HTML"]
+section = ["HTML", "RSS"]
+
+

@@ -1,0 +1,76 @@
+<script>
+(function() {
+  const today = new Date().getDate();
+  const isOddDay = today % 2 === 1;
+  
+  const coffeeTheme = {
+    '--color-link': '#8B4513',
+    '--color-visited-link': '#D2691E',
+    '--hint-color-info': '#CD853F',
+    '--title-color': '#8B4513'
+  };
+  
+  const matchaTheme = {
+    '--color-link': '#6B8E23', 
+    '--color-visited-link': '#556B2F',
+    '--hint-color-info': '#8FBC8F',
+    '--title-color': '#6B8E23'
+  };
+  
+  // 应用主题
+  const currentTheme = isOddDay ? coffeeTheme : matchaTheme;
+  const root = document.documentElement;
+  
+  // 设置 CSS 变量
+  Object.entries(currentTheme).forEach(([property, value]) => {
+    root.style.setProperty(property, value);
+  });
+  
+  // 添加主题类名
+  document.body.className = isOddDay ? 'theme-coffee' : 'theme-matcha';
+  
+  // 控制台提示
+  console.log(`📅 今天是 ${today} 号 - ${isOddDay ? '☕ 咖啡主题' : '🍵 抹茶主题'}`);
+})();
+</script>
+
+<!-- 主题专用样式 -->
+<style>
+.theme-coffee .book-header {
+  background: var(--header-background);
+  border-bottom: 2px solid #DEB887;
+}
+
+.theme-matcha .book-header {
+  background: var(--header-background);
+  border-bottom: 2px solid #9CAF88;
+}
+
+.book-menu nav > ul > li > a:hover {
+  background: var(--color-link);
+  color: white !important;
+  transform: translateX(4px);
+  transition: all 0.3s ease;
+}
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--menu-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-link);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--hint-color-info);
+}
+</style>
+
+
+

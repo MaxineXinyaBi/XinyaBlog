@@ -1,0 +1,34 @@
+{{ define "main" }}
+<div class="book-page">
+  <header class="book-header">
+    {{ partial "docs/title" . }}
+  </header>
+  <article class="markdown">    
+    <h1>Welcome!</h1>
+    
+    <h2>Recent Blogs</h2>
+    
+    {{ range first 15 (where site.RegularPages "Section" "posts") }}
+    <div style="margin-bottom: 1rem;">
+      <h3><a href="{{ .RelPermalink }}" style="text-decoration: none;">{{ .Title }}</a></h3>
+      <p style="color: #666; font-size: 0.9rem;"></p>
+    </div>
+    {{ end }}
+    
+    <div class="book-hint info">
+      <p>💡 <strong>Want to read more?</strong> Click <a href="/posts/">All blogs</a> for my past posts.</p>
+    </div>
+    
+    
+    <hr>
+    <p><em>Thanks for stopping by, if you are interested in my content, please use the RSS link for subscription!</em></p>
+  </article>
+</div>
+
+<style>
+.book-toc {
+  display: none !important;
+}
+</style>
+
+{{ end }}
